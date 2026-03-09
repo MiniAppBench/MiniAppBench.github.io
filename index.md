@@ -1,7 +1,3 @@
-
-
-
-```html
 ---
 layout: default
 title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants"
@@ -394,4 +390,3 @@ To have your results **verified and displayed** on the official leaderboard:
     Total Visitors: <img src="https://visitor-badge.laobi.icu/badge?page_id=miniappbench" alt="Visitors" style="vertical-align: middle; height: 18px;"> · Last Updated: 2026-02-28
   </p>
 </div>
-```
