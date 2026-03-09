@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants"
 ---
+<title>MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,7 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
     --color-bg-light: #f8f9fa;
   }
 
-  /* 隐藏 GitHub Pages 默认主题自动生成的标题和 Header */
-  .page-header, .page-title, .post-header, .post-title, .h1 {
+  .page-header, .site-header, .project-name, .project-tagline, .page-title, .post-header, .post-title {
     display: none !important;
   }
 
@@ -80,9 +79,6 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
   pre { background: var(--color-bg-light); padding: 1.5rem; border-radius: 4px; border: 1px solid var(--color-border); overflow-x: auto; }
   pre code { background: transparent; padding: 0; border: none; color: inherit; font-size: 0.9em; }
 
-  /* ==========================================================================
-     学术表格样式
-     ========================================================================== */
   .table-container { overflow-x: auto; margin: 2.5rem 0; }
   
   .markdown-body table.academic-table,
