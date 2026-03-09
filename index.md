@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+
+
 <title>MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,6 +11,14 @@ layout: default
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
+
+  body > header:first-of-type,
+  body > div > header:first-of-type,
+  .container > header:first-of-type,
+  .main-content > header:first-of-type {
+    display: none !important;
+  }
+
   :root {
     --color-text: #222222;
     --color-text-muted: #555555;
