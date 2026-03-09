@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-
-
-
 <title>MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,12 +8,26 @@ layout: default
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-
-  body > header:first-of-type,
-  body > div > header:first-of-type,
-  .container > header:first-of-type,
-  .main-content > header:first-of-type {
+  /* 强力隐藏所有可能的Jekyll默认header */
+  header,
+  body > header,
+  body > div > header,
+  .site-header,
+  .page-header,
+  .main-content > header,
+  .container > header,
+  #header,
+  .header,
+  .project-name,
+  .project-tagline,
+  .page-title,
+  .post-header,
+  .post-title {
     display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   :root {
@@ -29,18 +40,14 @@ layout: default
     --color-bg-light: #f8f9fa;
   }
 
-  .page-header, .site-header, .project-name, .project-tagline, .page-title, .post-header, .post-title {
-    display: none !important;
-  }
-
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: var(--color-text);
-    font-size: 18px; 
+    font-size: 16px;
     line-height: 1.7;
-    max-width: 1000px; 
+    max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 30px;
     background-color: #ffffff;
   }
 
@@ -51,52 +58,52 @@ layout: default
     line-height: 1.3;
   }
 
-  h1 { font-size: 2.8rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
-  h2 { font-size: 1.8rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.2rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; }
-  h3 { font-size: 1.3rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
-  p { margin-bottom: 1.2rem; }
+  h1 { font-size: 3.2rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
+  h2 { font-size: 2rem; font-weight: 700; margin-top: 3.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem; }
+  h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.2rem; }
+  p { margin-bottom: 1.3rem; }
   strong { font-weight: 600; }
   a { color: var(--color-link); text-decoration: none; }
   a:hover { color: var(--color-link-hover); text-decoration: underline; }
 
   /* Title Section Styling */
-  .paper-header { text-align: center; margin-bottom: 3rem; }
-  .paper-subtitle { font-size: 1.3rem; color: var(--color-text-muted); font-weight: 400; margin: 1rem auto 2rem; max-width: 850px; }
-  .paper-authors { font-size: 1.15rem; margin-bottom: 1.5rem; }
+  .paper-header { text-align: center; margin-bottom: 4rem; }
+  .paper-subtitle { font-size: 1.4rem; color: var(--color-text-muted); font-weight: 400; margin: 1.5rem auto 2.5rem; max-width: 850px; line-height: 1.6; }
+  .paper-authors { font-size: 1.2rem; margin-bottom: 2rem; }
 
   /* Abstract Block */
-  .abstract-block { background-color: var(--color-bg-light); padding: 2rem 3rem; border-radius: 4px; margin: 2.5rem 0; }
-  .abstract-block h2 { text-align: center; border: none; margin-top: 0; margin-bottom: 1rem; font-size: 1.5rem; }
+  .abstract-block { background-color: var(--color-bg-light); padding: 2.5rem 3rem; border-radius: 6px; margin: 3rem 0; }
+  .abstract-block h2 { text-align: center; border: none; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.8rem; }
 
   /* Academic Notice / Callout */
-  .update-notice { background-color: #f1f8ff; border-left: 4px solid var(--color-link); padding: 1.5rem 2rem; margin: 2rem auto; border-radius: 2px; max-width: 850px; }
-  .update-notice h3 { margin-top: 0; color: var(--color-link); font-family: 'Inter', sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .update-notice { background-color: #f1f8ff; border-left: 4px solid var(--color-link); padding: 2rem 2.5rem; margin: 2.5rem auto; border-radius: 4px; max-width: 850px; }
+  .update-notice h3 { margin-top: 0; color: var(--color-link); font-family: 'Inter', sans-serif; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; }
 
   /* CTA Button */
-  .primary-cta { display: inline-block; background: var(--color-link); color: white !important; padding: 0.6rem 1.5rem; border-radius: 4px; font-weight: 500; font-size: 1rem; text-decoration: none; transition: background-color 0.2s; }
+  .primary-cta { display: inline-block; background: var(--color-link); color: white !important; padding: 0.8rem 2rem; border-radius: 5px; font-weight: 500; font-size: 1.05rem; text-decoration: none; transition: background-color 0.2s; }
   .primary-cta:hover { background: var(--color-link-hover); text-decoration: none; }
 
   /* Badges */
-  .badge-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.5rem 0; }
-  .badge-row img { height: 28px; }
+  .badge-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0; }
+  .badge-row img { height: 30px; }
 
   /* Figures */
-  figure { margin: 2.5rem 0; text-align: center; }
-  figure img { max-width: 100%; border-radius: 4px; border: 1px solid var(--color-border); }
-  figcaption { font-size: 0.95rem; color: var(--color-text-muted); margin-top: 1rem; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto; }
+  figure { margin: 3rem 0; text-align: center; }
+  figure img { max-width: 100%; border-radius: 6px; border: 1px solid var(--color-border); }
+  figcaption { font-size: 0.95rem; color: var(--color-text-muted); margin-top: 1.2rem; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto; }
 
   /* Code Blocks */
-  code { font-family: 'JetBrains Mono', monospace; font-size: 0.85em; background: var(--color-bg-light); padding: 0.2em 0.4em; border-radius: 3px; border: 1px solid var(--color-border); color: #d73a49; }
-  pre { background: var(--color-bg-light); padding: 1.5rem; border-radius: 4px; border: 1px solid var(--color-border); overflow-x: auto; }
-  pre code { background: transparent; padding: 0; border: none; color: inherit; font-size: 0.9em; }
+  code { font-family: 'JetBrains Mono', monospace; font-size: 0.88em; background: var(--color-bg-light); padding: 0.2em 0.5em; border-radius: 3px; border: 1px solid var(--color-border); color: #d73a49; }
+  pre { background: var(--color-bg-light); padding: 1.8rem; border-radius: 6px; border: 1px solid var(--color-border); overflow-x: auto; margin: 2rem 0; }
+  pre code { background: transparent; padding: 0; border: none; color: inherit; font-size: 0.92em; }
 
-  .table-container { overflow-x: auto; margin: 2.5rem 0; }
-  
+  .table-container { overflow-x: auto; margin: 3rem 0; }
+
   .markdown-body table.academic-table,
   table.academic-table {
     width: 100% !important;
     border-collapse: collapse !important;
-    font-size: 0.95rem !important;
+    font-size: 0.9rem !important;
     font-family: 'Inter', sans-serif !important;
     border: none !important;
     background-color: transparent !important;
@@ -105,18 +112,18 @@ layout: default
 
   .markdown-body table.academic-table tr,
   .markdown-body table.academic-table tr:nth-child(2n),
-  table.academic-table tr, 
+  table.academic-table tr,
   table.academic-table tr:nth-child(2n) {
     background-color: transparent !important;
     border: none !important;
   }
 
-  .markdown-body table.academic-table th, 
+  .markdown-body table.academic-table th,
   .markdown-body table.academic-table td,
-  table.academic-table th, 
+  table.academic-table th,
   table.academic-table td {
     border: none !important;
-    padding: 10px 12px !important;
+    padding: 12px 14px !important;
     text-align: center !important;
     vertical-align: middle !important;
     color: var(--color-text) !important;
@@ -131,7 +138,7 @@ layout: default
     border-bottom: 2px solid #111 !important;
   }
 
-  table.academic-table th:first-child, 
+  table.academic-table th:first-child,
   table.academic-table td:first-child { text-align: left !important; }
 
   table.academic-table tr.table-section-header td {
@@ -144,9 +151,19 @@ layout: default
   }
 
   table.academic-table tr.average-row td {
-    border-top: 1px solid #111 !important; 
+    border-top: 1px solid #111 !important;
     background-color: #fcfcfc !important;
     font-weight: 600 !important;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body { padding: 40px 20px; font-size: 15px; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.3rem; }
+    .paper-subtitle { font-size: 1.1rem; }
+    .abstract-block { padding: 2rem; }
   }
 </style>
 
@@ -155,7 +172,7 @@ layout: default
   <p class="paper-subtitle">
     Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants
   </p>
-  
+
   <p class="paper-authors">
     <a href="#authors">Anonymous Authors</a> · <a href="#institution">Anonymous Institution</a>
   </p>
@@ -171,8 +188,8 @@ layout: default
 <div class="update-notice">
   <h3>📢 Latest Update — February 28, 2026</h3>
   <p><strong>Interactive Leaderboard Now Available!</strong> Test your models on MiniAppBench by submitting to our leaderboard. Simply provide your LLM API endpoint and let our evaluation framework automatically assess performance across 500 real-world tasks.</p>
-  <div style="margin-top: 1.2rem;">
-    <a href="https://huggingface.co/MiniAppBench" class="primary-cta">Submit to Leaderboard →</a>
+  <div style="margin-top: 1.5rem;">
+    <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard" class="primary-cta">Submit to Leaderboard →</a>
   </div>
 </div>
 
@@ -180,11 +197,11 @@ layout: default
   <h2>Abstract</h2>
   <p><strong>Human-AI interaction is evolving from static text responses to dynamic, interactive applications.</strong></p>
   <p><strong>MiniAppBench</strong> is the first comprehensive benchmark designed to evaluate <strong>principle-driven, interactive application generation</strong>. While traditional benchmarks focus on static layouts or algorithmic snippets, MiniAppBench shifts the paradigm toward <strong>MiniApps</strong>—HTML-based applications that require both visual rendering and complex interaction logic.</p>
-  
-  <h3 style="font-size: 1.1rem; margin-top: 1.5rem;">Key Highlights:</h3>
-  <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+
+  <h3 style="font-size: 1.2rem; margin-top: 2rem;">Key Highlights:</h3>
+  <ul style="margin-top: 0.8rem; padding-left: 2rem;">
     <li>🌍 <strong>Real-World Scale:</strong> Distilled from 10M+ generations</li>
-    <li>📊 <strong>500 Diverse Tasks:</strong> Across 6 domains</li>
+    <li>📊 <strong>Diverse Tasks:</strong> 500 tasks across 6 domains</li>
     <li>🤖 <strong>MiniAppEval Framework:</strong> Agentic browser automation</li>
     <li>📏 <strong>Multi-Dimensional:</strong> Intention, Static, Dynamic scoring</li>
     <li>🔬 <strong>High Alignment:</strong> Pearson r > 0.85 with humans</li>
@@ -322,7 +339,7 @@ We evaluated **15 state-of-the-art LLMs** across 500 tasks, measuring pass rates
       </tr>
     </tbody>
   </table>
-  <p style="font-size: 0.85rem; color: var(--color-text-muted); text-align: center; margin-top: 10px;">
+  <p style="font-size: 0.85rem; color: var(--color-text-muted); text-align: center; margin-top: 12px;">
     <em>Tokens and Time(s) columns have been omitted for brevity in this view.</em>
   </p>
 </div>
@@ -369,7 +386,7 @@ To have your results **verified and displayed** on the official leaderboard:
 2. **Automated Evaluation**: Our evaluation servers will run all 500 benchmark tasks using the MiniAppEval agent.
 3. **Review & Publication**: Evaluation typically completes within 6-12 hours. APIs used **only for evaluation** and deleted immediately after.
 
-<div style="text-align: center; margin: 2rem 0;">
+<div style="text-align: center; margin: 2.5rem 0;">
   <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard" class="primary-cta">🚀 Submit Your Model to Leaderboard</a>
 </div>
 
@@ -390,10 +407,10 @@ To have your results **verified and displayed** on the official leaderboard:
 
 <div style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
   <p><strong>MiniAppBench</strong> — <em>Advancing the Frontier of Interactive Human-AI Collaboration</em></p>
-  <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+  <p style="font-size: 0.95rem; margin-top: 0.8rem;">
     <a href="#paper">Paper</a> &nbsp;·&nbsp; <a href="#leaderboard">Leaderboard</a> &nbsp;·&nbsp; <a href="https://github.com/MiniAppBench/miniappbench">GitHub</a> &nbsp;·&nbsp; <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">Hugging Face</a>
   </p>
-  <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 1.5rem;">
+  <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-top: 1.8rem;">
     Total Visitors: <img src="https://visitor-badge.laobi.icu/badge?page_id=miniappbench" alt="Visitors" style="vertical-align: middle; height: 18px;"> · Last Updated: 2026-02-28
   </p>
 </div>
