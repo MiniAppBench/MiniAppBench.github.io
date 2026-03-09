@@ -1,3 +1,7 @@
+
+
+
+```html
 ---
 layout: default
 title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants"
@@ -16,6 +20,11 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
     --color-link-hover: #003d82;
     --color-border: #dddddd;
     --color-bg-light: #f8f9fa;
+  }
+
+  /* 隐藏 GitHub Pages 默认主题自动生成的标题和 Header */
+  .page-header, .page-title, .post-header, .post-title, .h1 {
+    display: none !important;
   }
 
   body {
@@ -91,7 +100,6 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
     margin: 0 !important;
   }
 
-  /* 杀掉所有默认边框和斑马纹 */
   .markdown-body table.academic-table tr,
   .markdown-body table.academic-table tr:nth-child(2n),
   table.academic-table tr, 
@@ -100,7 +108,6 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
     border: none !important;
   }
 
-  /* 单元格：清空竖线，调整间距 */
   .markdown-body table.academic-table th, 
   .markdown-body table.academic-table td,
   table.academic-table th, 
@@ -113,7 +120,6 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
     background-color: transparent !important;
   }
 
-  /* 学术三线表：加粗的表头上下线、表尾下线 */
   table.academic-table thead {
     border-top: 2px solid #111 !important;
     border-bottom: 1px solid #111 !important;
@@ -122,11 +128,9 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
     border-bottom: 2px solid #111 !important;
   }
 
-  /* 第一列统一左对齐 */
   table.academic-table th:first-child, 
   table.academic-table td:first-child { text-align: left !important; }
 
-  /* 分区表头（开源/闭源）的样式 */
   table.academic-table tr.table-section-header td {
     font-style: italic !important;
     background-color: #f8f9fa !important;
@@ -136,7 +140,6 @@ title: "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Respons
     text-align: center !important;
   }
 
-  /* 最后的 Average 行 */
   table.academic-table tr.average-row td {
     border-top: 1px solid #111 !important; 
     background-color: #fcfcfc !important;
@@ -339,7 +342,7 @@ We offer **two ways** to evaluate your model on MiniAppBench:
 ```bash
 # Clone the repository
 git clone https://github.com/MiniAppBench/miniappbench.git
-cd MiniAppBench
+cd miniappbench
 
 # Install dependencies
 pip install -r requirements.txt
@@ -353,4 +356,42 @@ python -m examples.pipeline \
   --batch "1-5" \
   --parallel \
   --concurrency 5
+```
+
+### Option 2: Submit to Official Leaderboard
+
+To have your results **verified and displayed** on the official leaderboard:
+
+1. **Prepare Your Submission**: Provide your Model Name, Organization, and an OpenAI-compatible API Endpoint.
+2. **Automated Evaluation**: Our evaluation servers will run all 500 benchmark tasks using the MiniAppEval agent.
+3. **Review & Publication**: Evaluation typically completes within 6-12 hours. APIs used **only for evaluation** and deleted immediately after.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard" class="primary-cta">🚀 Submit Your Model to Leaderboard</a>
+</div>
+
+📧 **Questions?** Contact us at [miniappbench@anonymous.org](mailto:miniappbench@anonymous.org).
+
+---
+
+## Citation
+
+```bibtex
+@article{miniappbench2026,
+  title={MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants},
+  author={Anonymous Authors},
+  journal={xxx},
+  year={2026}
+}
+```
+
+<div style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+  <p><strong>MiniAppBench</strong> — <em>Advancing the Frontier of Interactive Human-AI Collaboration</em></p>
+  <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+    <a href="#paper">Paper</a> &nbsp;·&nbsp; <a href="#leaderboard">Leaderboard</a> &nbsp;·&nbsp; <a href="https://github.com/MiniAppBench/miniappbench">GitHub</a> &nbsp;·&nbsp; <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">Hugging Face</a>
+  </p>
+  <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 1.5rem;">
+    Total Visitors: <img src="https://visitor-badge.laobi.icu/badge?page_id=miniappbench" alt="Visitors" style="vertical-align: middle; height: 18px;"> · Last Updated: 2026-02-28
+  </p>
+</div>
 ```
