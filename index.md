@@ -48,7 +48,9 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   a { color: var(--color-link); text-decoration: none; }
   a:hover { color: var(--color-link-hover); text-decoration: underline; }
 
-  /* Title Section Styling - 移除自定义header，使用Jekyll的 */
+  /* Title Section Styling */
+  .main-title { font-size: 3.8rem; font-weight: 700; text-align: center; margin: 2rem 0 1rem; font-family: 'Merriweather', serif; color: var(--color-heading); line-height: 1.2; }
+  .main-subtitle { font-size: 1.5rem; color: var(--color-text-muted); font-weight: 400; margin: 1rem auto 2rem; text-align: center; max-width: 850px; line-height: 1.6; }
   .paper-authors { font-size: 1.25rem; margin: 2rem 0 2.5rem; text-align: center; color: var(--color-text-muted); }
 
   /* Abstract Block */
@@ -141,6 +143,8 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   /* Responsive Design */
   @media (max-width: 768px) {
     body { padding: 20px 25px 40px; font-size: 16px; }
+    .main-title { font-size: 2.5rem; }
+    .main-subtitle { font-size: 1.2rem; }
     h2 { font-size: 1.8rem; }
     h3 { font-size: 1.4rem; }
     .abstract-block { padding: 2rem 1.5rem; }
@@ -148,6 +152,9 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
     .badge-row img { height: 28px; }
   }
 </style>
+
+<h1 class="main-title">MiniAppBench</h1>
+<p class="main-subtitle">Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</p>
 
 <p class="paper-authors">
   <a href="#authors">Anonymous Authors</a> · <a href="#institution">Anonymous Institution</a>
