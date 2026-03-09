@@ -8,7 +8,6 @@ layout: default
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-  /* 强力隐藏所有可能的Jekyll默认header */
   header,
   body > header,
   body > div > header,
