@@ -1,34 +1,14 @@
 ---
 layout: default
+title: MiniAppBench
+description: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants
 ---
-<title>MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-  header,
-  body > header,
-  body > div > header,
-  .site-header,
-  .page-header,
-  .main-content > header,
-  .container > header,
-  #header,
-  .header,
-  .project-name,
-  .project-tagline,
-  .page-title,
-  .post-header,
-  .post-title {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
   :root {
     --color-text: #222222;
     --color-text-muted: #555555;
@@ -42,11 +22,11 @@ layout: default
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: var(--color-text);
-    font-size: 16px;
-    line-height: 1.7;
-    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.75;
+    max-width: 950px;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: 20px 40px 70px;
     background-color: #ffffff;
   }
 
@@ -57,52 +37,55 @@ layout: default
     line-height: 1.3;
   }
 
-  h1 { font-size: 3.2rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
-  h2 { font-size: 2rem; font-weight: 700; margin-top: 3.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem; }
-  h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.2rem; }
-  p { margin-bottom: 1.3rem; }
+  h2 { font-size: 2.2rem; font-weight: 700; margin-top: 4rem; margin-bottom: 1.8rem; border-bottom: 2px solid var(--color-border); padding-bottom: 0.6rem; }
+  h3 { font-size: 1.7rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.4rem; }
+  p { margin-bottom: 1.4rem; }
+  ul { margin: 1.3rem 0; padding-left: 2.5rem; }
+  li { margin-bottom: 0.9rem; line-height: 1.75; }
+  ol { margin: 1.3rem 0; padding-left: 2.5rem; }
+  ol li { margin-bottom: 0.9rem; line-height: 1.75; }
   strong { font-weight: 600; }
   a { color: var(--color-link); text-decoration: none; }
   a:hover { color: var(--color-link-hover); text-decoration: underline; }
 
-  /* Title Section Styling */
-  .paper-header { text-align: center; margin-bottom: 4rem; }
-  .paper-subtitle { font-size: 1.4rem; color: var(--color-text-muted); font-weight: 400; margin: 1.5rem auto 2.5rem; max-width: 850px; line-height: 1.6; }
-  .paper-authors { font-size: 1.2rem; margin-bottom: 2rem; }
+  /* Title Section Styling - 移除自定义header，使用Jekyll的 */
+  .paper-authors { font-size: 1.25rem; margin: 2rem 0 2.5rem; text-align: center; color: var(--color-text-muted); }
 
   /* Abstract Block */
-  .abstract-block { background-color: var(--color-bg-light); padding: 2.5rem 3rem; border-radius: 6px; margin: 3rem 0; }
-  .abstract-block h2 { text-align: center; border: none; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.8rem; }
+  .abstract-block { background-color: var(--color-bg-light); padding: 3rem 3.5rem; border-radius: 8px; margin: 3.5rem 0; }
+  .abstract-block h2 { text-align: center; border: none; margin-top: 0; margin-bottom: 2rem; font-size: 2rem; }
+  .abstract-block p { font-size: 1.05rem; }
 
   /* Academic Notice / Callout */
-  .update-notice { background-color: #f1f8ff; border-left: 4px solid var(--color-link); padding: 2rem 2.5rem; margin: 2.5rem auto; border-radius: 4px; max-width: 850px; }
-  .update-notice h3 { margin-top: 0; color: var(--color-link); font-family: 'Inter', sans-serif; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .update-notice { background-color: #f1f8ff; border-left: 5px solid var(--color-link); padding: 2.5rem 3rem; margin: 3rem auto; border-radius: 5px; max-width: 850px; }
+  .update-notice h3 { margin-top: 0; margin-bottom: 1rem; color: var(--color-link); font-family: 'Inter', sans-serif; font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .update-notice p { font-size: 1.05rem; }
 
   /* CTA Button */
-  .primary-cta { display: inline-block; background: var(--color-link); color: white !important; padding: 0.8rem 2rem; border-radius: 5px; font-weight: 500; font-size: 1.05rem; text-decoration: none; transition: background-color 0.2s; }
-  .primary-cta:hover { background: var(--color-link-hover); text-decoration: none; }
+  .primary-cta { display: inline-block; background: var(--color-link); color: white !important; padding: 1rem 2.5rem; border-radius: 6px; font-weight: 500; font-size: 1.1rem; text-decoration: none; transition: all 0.2s; }
+  .primary-cta:hover { background: var(--color-link-hover); text-decoration: none; transform: translateY(-1px); }
 
   /* Badges */
-  .badge-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0; }
-  .badge-row img { height: 30px; }
+  .badge-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2.5rem 0; }
+  .badge-row img { height: 32px; }
 
   /* Figures */
-  figure { margin: 3rem 0; text-align: center; }
-  figure img { max-width: 100%; border-radius: 6px; border: 1px solid var(--color-border); }
-  figcaption { font-size: 0.95rem; color: var(--color-text-muted); margin-top: 1.2rem; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto; }
+  figure { margin: 4rem 0; text-align: center; }
+  figure img { max-width: 100%; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  figcaption { font-size: 1rem; color: var(--color-text-muted); margin-top: 1.5rem; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto; }
 
   /* Code Blocks */
-  code { font-family: 'JetBrains Mono', monospace; font-size: 0.88em; background: var(--color-bg-light); padding: 0.2em 0.5em; border-radius: 3px; border: 1px solid var(--color-border); color: #d73a49; }
-  pre { background: var(--color-bg-light); padding: 1.8rem; border-radius: 6px; border: 1px solid var(--color-border); overflow-x: auto; margin: 2rem 0; }
-  pre code { background: transparent; padding: 0; border: none; color: inherit; font-size: 0.92em; }
+  code { font-family: 'JetBrains Mono', monospace; font-size: 0.9em; background: var(--color-bg-light); padding: 0.25em 0.5em; border-radius: 4px; border: 1px solid var(--color-border); color: #d73a49; }
+  pre { background: var(--color-bg-light); padding: 2rem; border-radius: 8px; border: 1px solid var(--color-border); overflow-x: auto; margin: 2.5rem 0; }
+  pre code { background: transparent; padding: 0; border: none; color: inherit; font-size: 0.95em; }
 
-  .table-container { overflow-x: auto; margin: 3rem 0; }
+  .table-container { overflow-x: auto; margin: 3.5rem 0; }
 
   .markdown-body table.academic-table,
   table.academic-table {
     width: 100% !important;
     border-collapse: collapse !important;
-    font-size: 0.9rem !important;
+    font-size: 0.95rem !important;
     font-family: 'Inter', sans-serif !important;
     border: none !important;
     background-color: transparent !important;
@@ -122,7 +105,7 @@ layout: default
   table.academic-table th,
   table.academic-table td {
     border: none !important;
-    padding: 12px 14px !important;
+    padding: 14px 16px !important;
     text-align: center !important;
     vertical-align: middle !important;
     color: var(--color-text) !important;
@@ -157,37 +140,30 @@ layout: default
 
   /* Responsive Design */
   @media (max-width: 768px) {
-    body { padding: 40px 20px; font-size: 15px; }
-    h1 { font-size: 2.2rem; }
-    h2 { font-size: 1.6rem; }
-    h3 { font-size: 1.3rem; }
-    .paper-subtitle { font-size: 1.1rem; }
-    .abstract-block { padding: 2rem; }
+    body { padding: 20px 25px 40px; font-size: 16px; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.4rem; }
+    .abstract-block { padding: 2rem 1.5rem; }
+    .update-notice { padding: 2rem 1.5rem; }
+    .badge-row img { height: 28px; }
   }
 </style>
 
-<div class="paper-header">
-  <h1>MiniAppBench</h1>
-  <p class="paper-subtitle">
-    Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants
-  </p>
+<p class="paper-authors">
+  <a href="#authors">Anonymous Authors</a> · <a href="#institution">Anonymous Institution</a>
+</p>
 
-  <p class="paper-authors">
-    <a href="#authors">Anonymous Authors</a> · <a href="#institution">Anonymous Institution</a>
-  </p>
-
-  <div class="badge-row">
-    <a href="#paper"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="Paper"></a>
-    <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard"><img src="https://img.shields.io/badge/Leaderboard-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Leaderboard"></a>
-    <a href="https://github.com/MiniAppBench/miniappbench.git"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github" alt="GitHub"></a>
-    <a href="https://huggingface.co/datasets/MiniAppBench/Dataset"><img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Dataset"></a>
-  </div>
+<div class="badge-row">
+  <a href="#paper"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="Paper"></a>
+  <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard"><img src="https://img.shields.io/badge/Leaderboard-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Leaderboard"></a>
+  <a href="https://github.com/MiniAppBench/miniappbench.git"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github" alt="GitHub"></a>
+  <a href="https://huggingface.co/datasets/MiniAppBench/Dataset"><img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Dataset"></a>
 </div>
 
 <div class="update-notice">
   <h3>📢 Latest Update — February 28, 2026</h3>
   <p><strong>Interactive Leaderboard Now Available!</strong> Test your models on MiniAppBench by submitting to our leaderboard. Simply provide your LLM API endpoint and let our evaluation framework automatically assess performance across 500 real-world tasks.</p>
-  <div style="margin-top: 1.5rem;">
+  <div style="margin-top: 1.8rem;">
     <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard" class="primary-cta">Submit to Leaderboard →</a>
   </div>
 </div>
