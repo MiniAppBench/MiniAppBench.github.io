@@ -317,8 +317,8 @@ We evaluated **15 state-of-the-art LLMs** across 500 tasks, measuring pass rates
       <tr><td>Gemini-3-Pro</td><td>27.52</td><td>61.98</td><td>20.83</td><td>1.71</td><td>26.74</td><td>19.11</td><td>13.64</td><td>28.57</td><td>52.00</td><td>55.56</td></tr>
       <tr><td>GPT-5.1</td><td>32.00</td><td>74.71</td><td>21.37</td><td>3.49</td><td>24.14</td><td>18.10</td><td>33.33</td><td>45.83</td><td>57.78</td><td>64.71</td></tr>
       <tr><td>GPT-5.2</td><td>45.46</td><td>69.77</td><td>43.08</td><td>18.64</td><td>40.32</td><td>50.38</td><td>50.17</td><td>45.45</td><td>75.00</td><td>82.35</td></tr>
-      <tr><td>gpt-5.3-Codex</td><td>36.20</td><td>56.46</td><td>38.27</td><td>14.65</td><td>37.19</td><td>22.46</td><td>54.39</td><td>29.79</td><td>55.36</td><td>56.25</td></tr>
-      <tr><td>gpt-5.4</td><td>56.60</td><td>82.31</td><td>54.08</td><td>35.03</td><td>56.20</td><td>50.80</td><td>57.89</td><td>53.19</td><td>66.07</td><td>75.00</td></tr>
+      <tr><td>GPT-5.3-Codex</td><td>36.20</td><td>56.46</td><td>38.27</td><td>14.65</td><td>37.19</td><td>22.46</td><td>54.39</td><td>29.79</td><td>55.36</td><td>56.25</td></tr>
+      <tr><td>GPT-5.4</td><td>56.60</td><td>82.31</td><td>54.08</td><td>35.03</td><td>56.20</td><td>50.80</td><td>57.89</td><td>53.19</td><td>66.07</td><td>75.00</td></tr>
       <tr><td>Claude-Sonnet-4.5</td><td>26.36</td><td>68.22</td><td>14.86</td><td>1.79</td><td>16.13</td><td>22.30</td><td>29.27</td><td>23.81</td><td>47.73</td><td>44.83</td></tr>
       <tr><td>Claude-Opus-4.5</td><td>41.14</td><td>59.09</td><td>41.18</td><td>22.33</td><td>37.18</td><td>34.59</td><td>47.50</td><td>35.71</td><td>57.45</td><td>56.52</td></tr>
       <tr><td><strong>Claude-Opus-4.6</strong></td><td><strong>61.60</strong></td><td><strong>76.19</strong></td><td><strong>64.29</strong></td><td><strong>44.59</strong></td><td><strong>56.20</strong></td><td><strong>58.29</strong></td><td><strong>63.16</strong></td><td><strong>59.57</strong></td><td><strong>73.21</strong></td><td><strong>81.25</strong></td></tr>
