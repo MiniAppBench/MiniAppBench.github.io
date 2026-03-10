@@ -302,7 +302,10 @@ We evaluated **15 state-of-the-art LLMs** across 500 tasks, measuring pass rates
       <tr><td>Qwen3-Coder-480B</td><td>1.83</td><td>6.06</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>9.43</td><td>11.11</td></tr>
       <tr><td>Kimi-K2-Instruct</td><td>6.19</td><td>14.17</td><td>5.03</td><td>0.00</td><td>3.77</td><td>3.11</td><td>4.08</td><td>4.88</td><td>17.65</td><td>18.52</td></tr>
       <tr><td>GLM-4.5-Air</td><td>7.09</td><td>17.60</td><td>4.07</td><td>1.44</td><td>5.66</td><td>4.27</td><td>6.98</td><td>7.32</td><td>16.98</td><td>10.34</td></tr>
-      <tr><td><strong>GLM-4.7</strong></td><td><strong>18.31</strong></td><td><strong>36.30</strong></td><td><strong>15.06</strong></td><td><strong>4.41</strong></td><td><strong>12.50</strong></td><td><strong>10.49</strong></td><td><strong>20.00</strong></td><td><strong>17.07</strong></td><td><strong>35.19</strong></td><td><strong>48.39</strong></td></tr>
+      <tr><td>GLM-4.7</td><td>18.31</td><td>36.30</td><td>15.06</td><td>4.41</td><td>12.50</td><td>10.49</td><td>20.00</td><td>17.07</td><td>35.19</td><td>48.39</td></tr>
+      <tr><td><strong>GLM-5</strong></td><td><strong>61.80</strong></td><td><strong>68.71</strong></td><td><strong>68.88</strong></td><td><strong>46.50</strong></td><td><strong>57.85</strong></td><td><strong>57.22</strong></td><td><strong>64.91</strong></td><td><strong>55.32</strong></td><td><strong>76.79</strong></td><td><strong>81.25</strong></td></tr>
+
+
       <tr class="table-section-header">
         <td colspan="11">Closed-Source Large Language Models</td>
       </tr>
@@ -312,12 +315,15 @@ We evaluated **15 state-of-the-art LLMs** across 500 tasks, measuring pass rates
       <tr><td>MiniMax-M2.1</td><td>17.12</td><td>31.46</td><td>15.62</td><td>7.08</td><td>16.25</td><td>12.50</td><td>23.33</td><td>20.00</td><td>27.27</td><td>19.23</td></tr>
       <tr><td>Gemini-3-Flash</td><td>17.62</td><td>32.76</td><td>16.89</td><td>4.10</td><td>14.95</td><td>10.60</td><td>17.95</td><td>18.18</td><td>30.61</td><td>41.38</td></tr>
       <tr><td>Gemini-3-Pro</td><td>27.52</td><td>61.98</td><td>20.83</td><td>1.71</td><td>26.74</td><td>19.11</td><td>13.64</td><td>28.57</td><td>52.00</td><td>55.56</td></tr>
+      <tr><td>GPT-5.1</td><td>32.00</td><td>74.71</td><td>21.37</td><td>3.49</td><td>24.14</td><td>18.10</td><td>33.33</td><td>45.83</td><td>57.78</td><td>64.71</td></tr>
+      <tr><td>GPT-5.2</td><td>45.46</td><td>69.77</td><td>43.08</td><td>18.64</td><td>40.32</td><td>50.38</td><td>50.17</td><td>45.45</td><td>75.00</td><td>82.35</td></tr>
+      <tr><td>gpt-5.3-Codex</td><td>36.20</td><td>56.46</td><td>38.27</td><td>14.65</td><td>37.19</td><td>22.46</td><td>54.39</td><td>29.79</td><td>55.36</td><td>56.25</td></tr>
+      <tr><td>gpt-5.4</td><td>56.60</td><td>82.31</td><td>54.08</td><td>35.03</td><td>56.20</td><td>50.80</td><td>57.89</td><td>53.19</td><td>66.07</td><td>75.00</td></tr>
       <tr><td>Claude-Sonnet-4.5</td><td>26.36</td><td>68.22</td><td>14.86</td><td>1.79</td><td>16.13</td><td>22.30</td><td>29.27</td><td>23.81</td><td>47.73</td><td>44.83</td></tr>
       <tr><td>Claude-Opus-4.5</td><td>41.14</td><td>59.09</td><td>41.18</td><td>22.33</td><td>37.18</td><td>34.59</td><td>47.50</td><td>35.71</td><td>57.45</td><td>56.52</td></tr>
-      <tr><td>GPT-5.1</td><td>32.00</td><td>74.71</td><td>21.37</td><td>3.49</td><td>24.14</td><td>18.10</td><td>33.33</td><td>45.83</td><td>57.78</td><td>64.71</td></tr>
-      <tr><td><strong>GPT-5.2</strong></td><td><strong>45.46</strong></td><td><strong>69.77</strong></td><td><strong>43.08</strong></td><td><strong>18.64</strong></td><td><strong>40.32</strong></td><td><strong>50.38</strong></td><td><strong>50.17</strong></td><td><strong>45.45</strong></td><td><strong>75.00</strong></td><td><strong>82.35</strong></td></tr>
+      <tr><td><strong>Claude-Opus-4.6</strong></td><td><strong>61.60</strong></td><td><strong>76.19</strong></td><td><strong>64.29</strong></td><td><strong>44.59</strong></td><td><strong>56.20</strong></td><td><strong>58.29</strong></td><td><strong>63.16</strong></td><td><strong>59.57</strong></td><td><strong>73.21</strong></td><td><strong>81.25</strong></td></tr>
       <tr class="average-row">
-        <td>Average</td><td>17.05</td><td>34.05</td><td>13.89</td><td>4.34</td><td>14.71</td><td>11.64</td><td>18.07</td><td>17.55</td><td>31.63</td><td>33.30</td>
+        <td>Average</td><td>28.58</td><td>43.88</td><td>27.25</td><td>12.79</td><td>22.11</td><td>21.62</td><td>29.85</td><td>24.97</td><td>39.88</td><td>45.18</td>
       </tr>
     </tbody>
   </table>
