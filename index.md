@@ -156,9 +156,24 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 <h1 class="main-title">MiniAppBench</h1>
 <p class="main-subtitle">Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</p>
 
-<p class="paper-authors">
-  <a href="#authors">Anonymous Authors</a> · <a href="#institution">Anonymous Institution</a>
+<p class="paper-authors" style="line-height: 1.8;">
+  Zuhao Zhang<sup>1,2*</sup> &nbsp;·&nbsp;
+  Chengyue Yu<sup>1*</sup> &nbsp;·&nbsp;
+  Yuante Li<sup>3</sup> &nbsp;·&nbsp;
+  Chenyi Zhuang<sup>1†</sup> &nbsp;·&nbsp;
+  Linjian Mo<sup>1</sup> &nbsp;·&nbsp;
+  Shuai Li<sup>2</sup>
 </p>
+
+<p class="paper-institutions" style="font-size: 1.05rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">
+  <sup>1</sup>Inclusion AI, Ant Group &nbsp;&nbsp;&nbsp;
+  <sup>2</sup>Shanghai Jiao Tong University &nbsp;&nbsp;&nbsp;
+  <sup>3</sup>Carnegie Mellon University
+</p>
+
+<p class="paper-notes" style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 2rem;">
+  <sup>*</sup>Equal Contribution &nbsp;&nbsp;&nbsp; <sup>†</sup>Corresponding Author
+</p>>
 
 <div class="badge-row">
   <a href="#paper"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="Paper"></a>
