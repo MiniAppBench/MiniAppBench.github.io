@@ -9,7 +9,6 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-  /*111  */
   .paper-meta{
   text-align:center;
   margin: 2rem 0 2.5rem;
@@ -58,8 +57,6 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   font-size: .95rem;
   line-height: 1.6;
 }
-
-  /*111  */
   :root {
     --color-text: #222222;
     --color-text-muted: #555555;
@@ -252,12 +249,8 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 
 
 <div class="badge-row">
- <!-- <a href="https://arxiv.org/abs/2603.09652"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="Paper"></a>
-  <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard"><img src="https://img.shields.io/badge/Leaderboard-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Leaderboard"></a>
-  <a href="https://github.com/MiniAppBench/miniappbench.git"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github" alt="GitHub"></a>
-  <a href="https://huggingface.co/datasets/MiniAppBench/Dataset"><img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset"></a> -->
     <a href="https://arxiv.org/abs/2603.09652">
-    <img src="https://img.shields.io/badge/Paper-6c757d?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
+    <img src="https://img.shields.io/badge/Paper-6c757d?style=flat-square&logo=arxiv&logoColor=%23b41a1b" alt="Paper">
   </a>
 
   <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">
