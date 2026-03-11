@@ -489,7 +489,7 @@ To have your results **verified and displayed** on the official leaderboard:
   <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard" class="primary-cta">🚀 Submit Your Model to Leaderboard</a>
 </div>
 
-📧 **Questions?** Contact us at [miniappbench@anonymous.org](mailto:miniappbench@anonymous.org).
+📧 **Questions?** Contact us at [zhangzuhao.zzh@antgroup.com](zhangzuhao.zzh@antgroup.com).
 
 ---
 
@@ -508,7 +508,7 @@ To have your results **verified and displayed** on the official leaderboard:
 <div style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
   <p><strong>MiniAppBench</strong> — <em>Advancing the Frontier of Interactive Human-AI Collaboration</em></p>
   <p style="font-size: 0.95rem; margin-top: 0.8rem;">
-    <a href="#paper">Paper</a> &nbsp;·&nbsp; <a href="#leaderboard">Leaderboard</a> &nbsp;·&nbsp; <a href="https://github.com/MiniAppBench/miniappbench">GitHub</a> &nbsp;·&nbsp; <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">Hugging Face</a>
+    <a href="https://arxiv.org/abs/2603.09652">Paper</a> &nbsp;·&nbsp; <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">Leaderboard</a> &nbsp;·&nbsp; <a href="https://github.com/MiniAppBench/miniappbench">Code</a> &nbsp;·&nbsp; <a href="https://huggingface.co/datasets/MiniAppBench/Dataset">Dataset</a>
   </p>
   <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-top: 1.8rem;">
     Total Visitors: <img src="https://visitor-badge.laobi.icu/badge?page_id=miniappbench" alt="Visitors" style="vertical-align: middle; height: 18px;"> · Last Updated: 2026-02-28
