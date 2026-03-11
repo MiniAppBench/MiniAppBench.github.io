@@ -253,7 +253,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   </a>
 
   <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">
-    <img src="https://img.shields.io/badge/Leaderboard-000000?style=flat-square&logo=huggingface&logoColor=white" alt="Leaderboard">
+    <img src="https://img.shields.io/badge/Leaderboard-000000?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Leaderboard">
   </a>
 
   <a href="https://github.com/MiniAppBench/miniappbench">
@@ -261,7 +261,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   </a>
 
   <a href="https://huggingface.co/datasets/MiniAppBench/Dataset">
-    <img src="https://img.shields.io/badge/Dataset-000000?style=flat-square&logo=huggingface&logoColor=white" alt="Dataset">
+    <img src="https://img.shields.io/badge/Dataset-000000?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset">
   </a>
 </div>
 
