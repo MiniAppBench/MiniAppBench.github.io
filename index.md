@@ -19,9 +19,10 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap: .3rem .5rem;              /* 行间距/列间距 */
+  gap: .3rem .3rem;              /* 行间距/列间距 */
   font-size: 1.25rem;
   line-height: 1.6;
+  color: #1b70f7
 }
 
 .paper-authors .author{
