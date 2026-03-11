@@ -202,15 +202,15 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   }
   /* tighten spacing between authors and affiliations */
 .paper-meta{
-  margin: 0.8rem 0 1.2rem;   /* 原来 2rem 0 2.5rem */
+  margin: 0.8rem 0 2.2rem;   /* 原来 2rem 0 2.5rem */
 }
 
 .paper-institutions{
-  margin-top: 0.15rem;       /* 原来 .55rem */
+  margin-top: 0.35rem;       /* 原来 .55rem */
 }
 
 .paper-notes{
-  margin-top: 0.15rem;       /* 原来 .55rem */
+  margin-top: 0.35rem;       /* 原来 .55rem */
 }
 </style>
 
