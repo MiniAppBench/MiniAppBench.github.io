@@ -101,7 +101,6 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   /* Title Section Styling */
   .main-title { font-size: 3.8rem; font-weight: 700; text-align: center; margin: 2rem 0 1rem; font-family: 'Merriweather', serif; color: var(--color-heading); line-height: 1.2; }
   .main-subtitle { font-size: 1.5rem; color: var(--color-text-muted); font-weight: 400; margin: 1rem auto 2rem; text-align: center; max-width: 850px; line-height: 1.6; }
-  .paper-authors { font-size: 1.25rem; margin: 2rem 0 2.5rem; text-align: center; color: var(--color-text-muted); }
 
   /* Abstract Block */
   .abstract-block { background-color: var(--color-bg-light); padding: 3rem 3.5rem; border-radius: 8px; margin: 3.5rem 0; }
@@ -201,9 +200,21 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
     .update-notice { padding: 2rem 1.5rem; }
     .badge-row img { height: 28px; }
   }
+  /* tighten spacing between authors and affiliations */
+.paper-meta{
+  margin: 0.8rem 0 1.2rem;   /* 原来 2rem 0 2.5rem */
+}
+
+.paper-institutions{
+  margin-top: 0.15rem;       /* 原来 .55rem */
+}
+
+.paper-notes{
+  margin-top: 0.15rem;       /* 原来 .55rem */
+}
 </style>
 
-<h1 class="main-title">MiniAppBench: Evaluating the Shift <br> from Text to Interactive HTML Responses in LLM-Powered Assistants</h1>
+<h1 class="main-title">MiniAppBench: Evaluating the Shift <br> from Text to Interactive HTML Responses <br> in LLM-Powered Assistants</h1>
 
 <!-- <p class="paper-authors" style="line-height: 1.8;">
   Zuhao Zhang<sup>1,2*</sup> &nbsp;·&nbsp;
