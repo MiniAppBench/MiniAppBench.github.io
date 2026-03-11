@@ -19,13 +19,14 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap: .3rem .3rem;              /* 行间距/列间距 */
+  gap: .3rem .1rem;              /* 行间距/列间距 */
   font-size: 1.25rem;
   line-height: 1.0;
 }
 
 .paper-authors .author{
   white-space: nowrap;
+  color: #000000;
 }
 
 .paper-authors .author:not(:last-child)::after{
@@ -38,7 +39,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap: .35rem 2rem;
+  gap: .35rem 1rem;
   margin-top: .55rem;
   font-size: 1.05rem;
   line-height: 1.0;
@@ -53,10 +54,10 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap: .35rem 2rem;
+  gap: .35rem 1rem;
   margin-top: .55rem;
   font-size: .95rem;
-  line-height: 1.6;
+  line-height: 1.0;
 }
   :root {
     --color-text: #222222;
@@ -192,7 +193,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   /* Responsive Design */
   @media (max-width: 768px) {
     body { padding: 20px 25px 40px; font-size: 16px; }
-    .main-title { font-size: 2.5rem; }
+    .main-title { font-size: 2.2rem; }
     .main-subtitle { font-size: 1.2rem; }
     h2 { font-size: 1.8rem; }
     h3 { font-size: 1.4rem; }
