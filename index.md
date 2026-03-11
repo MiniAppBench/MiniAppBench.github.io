@@ -31,7 +31,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 .paper-authors .author:not(:last-child)::after{
   content: " ·";
   margin-left: .25rem;
-  color: #9aa0a6;
+  color: #000000;
 }
 
 .paper-institutions{
@@ -41,11 +41,12 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   gap: .35rem 2rem;
   margin-top: .55rem;
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.0;
 }
 
 .paper-institutions .inst{
   white-space: nowrap;
+  color: #000000;
 }
 
 .paper-notes{
@@ -485,9 +486,10 @@ To have your results **verified and displayed** on the official leaderboard:
 ```bibtex
 @article{miniappbench2026,
   title={MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants},
-  author={Anonymous Authors},
-  journal={xxx},
-  year={2026}
+  author={Zuhao Zhang and Chengyue Yu and Yuante Li and Chenyi Zhuang and Linjian Mo and Shuai Li},
+  journal={arXiv},
+  year={2026},
+  url={https://arxiv.org/abs/2603.09652}
 }
 ```
 
