@@ -257,19 +257,19 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   <a href="https://github.com/MiniAppBench/miniappbench.git"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github" alt="GitHub"></a>
   <a href="https://huggingface.co/datasets/MiniAppBench/Dataset"><img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset"></a> -->
     <a href="https://arxiv.org/abs/2603.09652">
-    <img src="https://img.shields.io/badge/Paper-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
+    <img src="https://img.shields.io/badge/Paper-6c757d?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
   </a>
 
   <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">
-    <img src="https://img.shields.io/badge/Leaderboard-FFD21E?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Leaderboard">
+    <img src="https://img.shields.io/badge/Leaderboard-6c757d?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Leaderboard">
   </a>
 
   <a href="https://github.com/MiniAppBench/miniappbench">
-    <img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" alt="Code">
+    <img src="https://img.shields.io/badge/Code-6c757d?style=flat-square&logo=github&logoColor=white" alt="Code">
   </a>
 
   <a href="https://huggingface.co/datasets/MiniAppBench/Dataset">
-    <img src="https://img.shields.io/badge/Dataset-FFD21E?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset">
+    <img src="https://img.shields.io/badge/Dataset-6c757d?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset">
   </a>
 </div>
 
