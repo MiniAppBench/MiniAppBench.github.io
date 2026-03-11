@@ -201,8 +201,8 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   }
 </style>
 
-<h1 class="main-title">MiniAppBench</h1>
-<p class="main-subtitle">Evaluating the Shift from Text to Interactive HTML Responses <br> in LLM-Powered Assistants</p>
+<h1 class="main-title">MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</h1>
+<!-- <p class="main-subtitle">Evaluating the Shift from Text to Interactive HTML Responses <br> in LLM-Powered Assistants</p> -->
 
 <!-- <p class="paper-authors" style="line-height: 1.8;">
   Zuhao Zhang<sup>1,2*</sup> &nbsp;·&nbsp;
