@@ -9,6 +9,57 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
+  /*111  */
+  .paper-meta{
+  text-align:center;
+  margin: 2rem 0 2.5rem;
+  color: var(--color-text-muted);
+}
+
+.paper-authors{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap: .4rem .9rem;              /* 行间距/列间距 */
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.paper-authors .author{
+  white-space: nowrap;
+}
+
+.paper-authors .author:not(:last-child)::after{
+  content: " ·";
+  margin-left: .25rem;
+  color: #9aa0a6;
+}
+
+.paper-institutions{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap: .35rem 2rem;
+  margin-top: .55rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.paper-institutions .inst{
+  white-space: nowrap;
+}
+
+.paper-notes{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap: .35rem 2rem;
+  margin-top: .55rem;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+  /*111  */
   :root {
     --color-text: #222222;
     --color-text-muted: #555555;
@@ -154,9 +205,9 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 </style>
 
 <h1 class="main-title">MiniAppBench</h1>
-<p class="main-subtitle">Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants</p>
+<p class="main-subtitle">Evaluating the Shift from Text to Interactive HTML Responses <br> in LLM-Powered Assistants</p>
 
-<p class="paper-authors" style="line-height: 1.8;">
+<!-- <p class="paper-authors" style="line-height: 1.8;">
   Zuhao Zhang<sup>1,2*</sup> &nbsp;·&nbsp;
   Chengyue Yu<sup>1*</sup> &nbsp;·&nbsp;
   Yuante Li<sup>3</sup> &nbsp;·&nbsp;
@@ -173,7 +224,30 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 
 <p class="paper-notes" style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 2rem;">
   <sup>*</sup>Equal Contribution &nbsp;&nbsp;&nbsp; <sup>†</sup>Corresponding Author
-</p>>
+</p>> -->
+
+<div class="paper-meta">
+  <div class="paper-authors">
+    <span class="author">Zuhao Zhang<sup>1,2*</sup></span>
+    <span class="author">Chengyue Yu<sup>1*</sup></span>
+    <span class="author">Yuante Li<sup>3</sup></span>
+    <span class="author">Chenyi Zhuang<sup>1†</sup></span>
+    <span class="author">Linjian Mo<sup>1</sup></span>
+    <span class="author">Shuai Li<sup>2</sup></span>
+  </div>
+
+  <div class="paper-institutions">
+    <span class="inst"><sup>1</sup>Inclusion AI, Ant Group</span>
+    <span class="inst"><sup>2</sup>Shanghai Jiao Tong University</span>
+    <span class="inst"><sup>3</sup>Carnegie Mellon University</span>
+  </div>
+
+  <div class="paper-notes">
+    <span class="note"><sup>*</sup>Equal Contribution</span>
+    <span class="note"><sup>†</sup>Corresponding Author</span>
+  </div>
+</div>
+
 
 
 
