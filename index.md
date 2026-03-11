@@ -262,19 +262,19 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 
 <div class="badge-row">
     <a href="https://arxiv.org/abs/2603.09652">
-    <img src="https://img.shields.io/badge/Paper-000000?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
+    <img src="https://img.shields.io/badge/Paper-303030?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
   </a>
 
   <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard">
-    <img src="https://img.shields.io/badge/Leaderboard-000000?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Leaderboard">
+    <img src="https://img.shields.io/badge/Leaderboard-303030?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Leaderboard">
   </a>
 
   <a href="https://github.com/MiniAppBench/miniappbench">
-    <img src="https://img.shields.io/badge/Code-000000?style=flat-square&logo=github&logoColor=white" alt="Code">
+    <img src="https://img.shields.io/badge/Code-303030?style=flat-square&logo=github&logoColor=white" alt="Code">
   </a>
 
   <a href="https://huggingface.co/datasets/MiniAppBench/Dataset">
-    <img src="https://img.shields.io/badge/Dataset-000000?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset">
+    <img src="https://img.shields.io/badge/Dataset-303030?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset">
   </a>
 </div>
 
