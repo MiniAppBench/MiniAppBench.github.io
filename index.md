@@ -279,7 +279,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 </div>
 
 <div class="update-notice">
-  <h3>📢 Latest Update — February 28, 2026</h3>
+  <h3>📢 Latest Update — March 10, 2026</h3>
   <p><strong>Interactive Leaderboard Now Available!</strong> Test your models on MiniAppBench by submitting to our leaderboard. Simply provide your LLM API endpoint and let our evaluation framework automatically assess performance across 500 real-world tasks.</p>
   <div style="margin-top: 1.8rem;">
     <a href="https://huggingface.co/spaces/MiniAppBench/Leaderboard" class="primary-cta">Submit to Leaderboard →</a>
