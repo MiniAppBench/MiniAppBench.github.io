@@ -219,7 +219,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
 <!-- <p class="paper-authors" style="line-height: 1.8;">
   Zuhao Zhang<sup>1,2*</sup> &nbsp;·&nbsp;
   Chengyue Yu<sup>1*</sup> &nbsp;·&nbsp;
-  Yuante Li<sup>3</sup> &nbsp;·&nbsp;
+  Yuante Li<sup>3*</sup> &nbsp;·&nbsp;
   Chenyi Zhuang<sup>1†</sup> &nbsp;·&nbsp;
   Linjian Mo<sup>1</sup> &nbsp;·&nbsp;
   Shuai Li<sup>2</sup>
@@ -277,7 +277,10 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
     <img src="https://img.shields.io/badge/Dataset-303030?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset">
   </a>
 </div>
-
+<div class="update-notice">
+  <h3>📢 News — May 1, 2026</h3>
+  <p><strong>Our paper has been accepted to ICML 2026 as a Spotlight presentation!</strong></p>
+</div>
 <div class="update-notice">
   <h3>📢 Latest Update — March 17, 2026</h3>
   <p><strong>Interactive Leaderboard Now Available!</strong> Test your models on MiniAppBench by submitting to our leaderboard. Simply provide your LLM API endpoint and let our evaluation framework automatically assess performance across 500 real-world tasks.</p>
