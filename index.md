@@ -239,7 +239,7 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
   <div class="paper-authors">
     <span class="author">Zuhao Zhang<sup>1,2*</sup></span>
     <span class="author">Chengyue Yu<sup>1*</sup></span>
-    <span class="author">Yuante Li<sup>3</sup></span>
+    <span class="author">Yuante Li<sup>3*</sup></span>
     <span class="author">Chenyi Zhuang<sup>1†</sup></span>
     <span class="author">Linjian Mo<sup>1</sup></span>
     <span class="author">Shuai Li<sup>2</sup></span>
