@@ -277,11 +277,13 @@ description: Evaluating the Shift from Text to Interactive HTML Responses in LLM
     <img src="https://img.shields.io/badge/Dataset-303030?style=flat-square&logo=huggingface&logoColor=%23FFD21F" alt="Dataset">
   </a>
 </div>
+<!-- <div class="update-notice">
+  <h3>📢 News — May 1, 2026</h3>
+  <p><strong>Our paper has been accepted to ICML 2026 as a Spotlight presentation!</strong></p>
+</div> -->
 <div class="update-notice">
   <h3>📢 News — May 1, 2026</h3>
   <p><strong>Our paper has been accepted to ICML 2026 as a Spotlight presentation!</strong></p>
-</div>
-<div class="update-notice">
   <h3>📢 Latest Update — March 17, 2026</h3>
   <p><strong>Interactive Leaderboard Now Available!</strong> Test your models on MiniAppBench by submitting to our leaderboard. Simply provide your LLM API endpoint and let our evaluation framework automatically assess performance across 500 real-world tasks.</p>
   <div style="margin-top: 1.8rem;">
